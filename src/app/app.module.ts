@@ -5,10 +5,18 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material/material.module';
+import { LoginComponent } from './Model/auth/login/login.component';
+import { SignupComponent } from './Model/auth/signup/signup.component';
+import { HomeComponent } from './Model/info/home/home.component';
+import { AboutComponent } from './Model/info/about/about.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    SignupComponent,
+    HomeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
