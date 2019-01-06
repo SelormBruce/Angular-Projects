@@ -9,7 +9,8 @@ import { LoginComponent } from './Model/auth/login/login.component';
 import { SignupComponent } from './Model/auth/signup/signup.component';
 import { HomeComponent } from './Model/info/home/home.component';
 import { AboutComponent } from './Model/info/about/about.component';
-
+import {AngularFireModule} from 'angularfire2';
+import { environment } from 'src/environments/environment.prod';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,8 +24,8 @@ import { AboutComponent } from './Model/info/about/about.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    MaterialModule
-    
+    MaterialModule,
+    AngularFireModule.initializeApp(environment.Firebaseconfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
